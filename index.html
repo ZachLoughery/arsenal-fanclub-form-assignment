@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="icon" href="images/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="images/favicon.png" />
     <title>Gunners Fanclub</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <header class="header">
-            <img src="images/arsenal-fc-logo.png" alt="Arsenal FC logo">
-            <h1>GUNNERS FANCLUB SIGNUP</h1>
-        </header>
-        </header>
-        <form action="/action_page.php" method="get">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name">
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob">
-            <label for="email">Email Address</label>
-            <input type="text" id="email" name="email">
-            <label for="arsenal-player">Favourite First Team Player</label>
-            <select name="arsenal-player" id="arsenal-player">
-                <option value="Aaron Ramsdale">Aaron Ramsdale</option>
-                <option value="Ben White">Ben White</option>
-                <option value="Bukayo Saka">Bukayo Saka</option>
-                <option value="Cédric Soares">Cédric Soares</option>
-                <option value="David Raya">David Raya</option>
-                <option value="Declan Rice">Declan Rice</option>
-                <option value="Eddie Nketiah">Eddie Nketiah</option>
-                <option value="Emile Smith Rowe">Emile Smith Rowe</option>
-                <option value="Fábio Vieira">Fábio Vieira</option>
-                <option value="Gabriel Jesus">Gabriel Jesus</option>
-                <option value="Gabriel Magalhães">Gabriel Magalhães</option>
-                <option value="Gabriel Martinelli">Gabriel Martinelli</option>
-                <option value="Jakub Kiwior">Jakub Kiwior</option>
-                <option value="Jorginho">Jorginho</option>
-                <option value="Jurriën Timber">Jurriën Timber</option>
-                <option value="Kai Havertz">Kai Havertz</option>
-                <option value="Karl Hein">Karl Hein</option>
-                <option value="Leandro Trossard">Leandro Trossard</option>
-                <option value="Martin Ødegaard">Martin Ødegaard</option>
-                <option value="Mohamed Elneny">Mohamed Elneny</option>
-                <option value="Oleksandr Zinchenko">Oleksandr Zinchenko</option>
-                <option value="Reiss Nelson">Reiss Nelson</option>
-                <option value="Takehiro Tomiyasu">Takehiro Tomiyasu</option>
-                <option value="Thomas Partey">Thomas Partey</option>
-            </select>
+      <header class="header">
+        <img src="images/arsenal-fc-logo.png" alt="Arsenal FC logo" />
+        <h1>GUNNERS FANCLUB SIGNUP</h1>
+      </header>
+      <section>
+        <form action="" autocomplete="off">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required="yes" />
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required="yes" />
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required="yes" />
+          <label for="arsenal-player">Favourite First Team Player</label>
+          <select name="arsenal-player" id="arsenal-player">
+            <option value="Aaron Ramsdale">Aaron Ramsdale</option>
+            <option value="Ben White">Ben White</option>
+            <option value="Bukayo Saka">Bukayo Saka</option>
+            <option value="Cédric Soares">Cédric Soares</option>
+            <option value="David Raya">David Raya</option>
+            <option value="Declan Rice">Declan Rice</option>
+            <option value="Eddie Nketiah">Eddie Nketiah</option>
+            <option value="Emile Smith Rowe">Emile Smith Rowe</option>
+            <option value="Fábio Vieira">Fábio Vieira</option>
+            <option value="Gabriel Jesus">Gabriel Jesus</option>
+            <option value="Gabriel Magalhães">Gabriel Magalhães</option>
+            <option value="Gabriel Martinelli">Gabriel Martinelli</option>
+            <option value="Jakub Kiwior">Jakub Kiwior</option>
+            <option value="Jorginho">Jorginho</option>
+            <option value="Jurriën Timber">Jurriën Timber</option>
+            <option value="Kai Havertz">Kai Havertz</option>
+            <option value="Karl Hein">Karl Hein</option>
+            <option value="Leandro Trossard">Leandro Trossard</option>
+            <option value="Martin Ødegaard">Martin Ødegaard</option>
+            <option value="Mohamed Elneny">Mohamed Elneny</option>
+            <option value="Oleksandr Zinchenko">Oleksandr Zinchenko</option>
+            <option value="Reiss Nelson">Reiss Nelson</option>
+            <option value="Takehiro Tomiyasu">Takehiro Tomiyasu</option>
+            <option value="Thomas Partey">Thomas Partey</option>
+          </select>
+          <div>
             <label for="updates">Receive email updates weekly</label>
-            <input type="checkbox" class="switch" id="updates" name="updates">
-            <label for="offers">Receive offers and deals for stadium tickets</label>
-            <input type="checkbox" class="switch" id="offers" name="offers">
-            <input type="submit" value="Submit">
-          </form>
+            <input type="checkbox" class="switch" id="updates" name="updates" />
+          </div>
+          <div>
+            <label for="offers"
+              >Receive offers and deals for stadium tickets</label
+            >
+            <input type="checkbox" class="switch" id="offers" name="offers" />
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 </html>
