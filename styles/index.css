@@ -26,7 +26,7 @@ main {
   background-position: center;
   max-width: 50vw;
   max-height: 20vh;
-  height: 23vh;
+  height: 20vh;
   width: 100%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -60,7 +60,7 @@ form {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 20px;
 }
 
 form label {
@@ -87,4 +87,70 @@ input[type="date"]:focus,
 select:focus {
   outline: none;
   box-shadow: 2px 2px 5px 2px #292929;
+}
+
+/* Checkbox Styling */
+
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox input {
+  height: 30px;
+  width: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.checkbox input:checked {
+  border: 1px solid #910c0c;
+  background-color: #000000;
+}
+
+.checkbox input:checked + span::before {
+  content: "✔";
+  font-size: larger;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  left: 0.35rem;
+  top: 0.1rem;
+}
+
+/* Button Styling */
+
+input[type="submit"] {
+    background-color: transparent;
+    border: solid 1px white;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    align-self: center;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    transform: scale(1.3);
+    box-shadow: 0px 0px 5px 0px #000000bf;
+    color: #ef0107;
 }

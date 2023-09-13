@@ -17,7 +17,13 @@
       <section>
         <form action="" autocomplete="off">
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required="yes" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required="yes"
+            autofocus="yes"
+          />
           <label for="dob">Date of Birth</label>
           <input type="date" id="dob" name="dob" required="yes" />
           <label for="email">Email Address</label>
@@ -49,15 +55,21 @@
             <option value="Takehiro Tomiyasu">Takehiro Tomiyasu</option>
             <option value="Thomas Partey">Thomas Partey</option>
           </select>
-          <div>
+          <div class="form__checkbox">
             <label for="updates">Receive email updates weekly</label>
-            <input type="checkbox" class="switch" id="updates" name="updates" />
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span></span>
+            </label>
           </div>
-          <div>
+          <div class="form__checkbox">
             <label for="offers"
               >Receive offers and deals for stadium tickets</label
             >
-            <input type="checkbox" class="switch" id="offers" name="offers" />
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span></span>
+            </label>
           </div>
           <input type="submit" value="Submit" />
         </form>
